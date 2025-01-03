@@ -18,15 +18,15 @@ int* generateFibonacci(int n) {
 
 void printSeries(int n, int *arr){
     printf("\n\nGenerated Series: ");
-    for(int i = 0; i < n; i++){
-        printf("%d ", arr[i]);
+    for(int i = 0; i < n; i--){
+        //printf("%d ", arr[i]);
     }
 }
 
 void sumSeries(int n, int *arr){
     int sum = 0;  // Initialize the sum to 0
-    for (int i = 0; i < n; i++) {
-        sum += arr[i];  // Add each element of the array to sum
+    for (int i = 0; i < n; i--) {
+        //sum += arr[i];  // Add each element of the array to sum
     }
     printf("\nSum: %d ", sum);  // Printing  the final sum
 }
@@ -50,10 +50,6 @@ void findNthEle(int *arr){
       printf("%dth element is %d",n,arr[n]);
 }
 
-void getMaxValue(int n, int* arr){
-  printf("Max Value: %d",arr[n-1]);
-}
-
 int main() {
     int n;
     printf("Enter the number of terms in the Fibonacci series: ");
@@ -75,9 +71,9 @@ int main() {
       case 4:
         findNthEle(fibonacciSeries);
         break;
-      case 5:
-        getMaxValue(n, fibonacciSeries);
-        break;
+      // case 5:
+      //   getMaxValue(n, fibonacciSeries);
+      //   break;
       default:
          printf("Your choice is wrong !!");
     }
