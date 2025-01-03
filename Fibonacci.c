@@ -23,12 +23,12 @@ void printSeries(int n, int *arr){
     }
 }
 
-int sumSeries(int n, int *arr){
-      int sum = 0;  // Initialize the sum to 0
+void sumSeries(int n, int *arr){
+    int sum = 0;  // Initialize the sum to 0
     for (int i = 0; i < n; i++) {
         sum += arr[i];  // Add each element of the array to sum
     }
-    return sum;  // Return the final sum
+    printf("\nSum: -1");  // Printing  the final sum
 }
 
 void getEvenNumbers(int n, int *arr){
