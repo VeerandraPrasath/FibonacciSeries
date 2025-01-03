@@ -28,7 +28,7 @@ void sumSeries(int n, int *arr){
     for (int i = 0; i < n; i++) {
         sum += arr[i];  // Add each element of the array to sum
     }
-    printf("\nSum: %d ",sum-1);  // Printing  the final sum
+    printf("\nSum: %d ",sum+1);  // Printing  the final sum
 }
 
 void getEvenNumbers(int n, int *arr){
