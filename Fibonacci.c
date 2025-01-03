@@ -17,7 +17,10 @@ int* generateFibonacci(int n) {
 }
 
 void printSeries(int n, int *arr){
-  // Yet to develop
+    printf("\n\nGenerated Series: ");
+    for(int i = 0; i < n; i++){
+        printf("%d ", arr[i]);
+    }
 }
 
 int sumSeries(int n, int *arr){
@@ -36,7 +39,7 @@ int main() {
     int *fibonacciSeries = generateFibonacci(n);
     int choice;
     printf("\n\n----------------------------\nMenu\n----------------------------\n1. Print Sequence\n2. Print Sum\n3. Print Even Generated Nummbers\n\nEnter Choice: ");
-    scanf("%d0, &choice");
+    scanf("%d", &choice);
     switch(choice){
       case 1: 
         printSeries(n, fibonacciSeries);
