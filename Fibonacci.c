@@ -43,6 +43,13 @@ void getEvenNumbers(int n, int *arr){
   }
 }
 
+void findNthEle(int *arr){
+      int n;
+      printf("Enter the nth element to know :");
+      scanf("%d",&n);
+      printf("%dth element is %d",n,arr[n]);
+}
+
 
 int main() {
     int n;
@@ -50,7 +57,7 @@ int main() {
     scanf("%d", &n);
     int *fibonacciSeries = generateFibonacci(n);
     int choice;
-    printf("\n\n----------------------------\nMenu\n----------------------------\n1. Print Sequence\n2. Print Sum\n3. Print Even Generated Nummbers\n\nEnter Choice: ");
+    printf("\n\n----------------------------\nMenu\n----------------------------\n1. Print Sequence\n2. Print Sum\n3. Print Even Generated Nummbers\n4.Print the nth element\nEnter Choice: ");
     scanf("%d", &choice);
     switch(choice){
       case 1: 
@@ -62,6 +69,11 @@ int main() {
       case 3:
         getEvenNumbers(n, fibonacciSeries);
         break;
+      case 4:
+        findNthEle(fibonacciSeries);
+        break;
+      default:
+         printf("Your choice is wrong !!");
     }
     printf("\n");
     free(fibonacciSeries);
