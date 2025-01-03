@@ -1,3 +1,5 @@
+// Author Name: Prasath
+
 // C Program to print the fibonacci series using loops
 #include <stdio.h>
 
