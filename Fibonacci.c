@@ -17,7 +17,7 @@ int* generateFibonacci(int n) {
 }
 
 void printSeries(int n, int *arr){
-  // Yet to deveop
+  // Yet to develop
 }
 
 int sumSeries(int n, int *arr){
