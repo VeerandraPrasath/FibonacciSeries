@@ -42,8 +42,17 @@ void getEvenNumbers(int n, int *arr){
       arr++;
   }
 }
-
-
+void getOddNumbers(int n, int *arr){
+  int i = 0 ;
+  for(i = 0 ; i < n ; i++)
+  {
+      if((*arr) % 2 == 1)
+      {
+          printf("%d ",*arr);
+      }
+      arr++;
+  }
+}
 int main() {
     int n;
     printf("Enter the number of terms in the Fibonacci series: ");
@@ -61,6 +70,9 @@ int main() {
         break;
       case 3:
         getEvenNumbers(n, fibonacciSeries);
+        break;
+      case 4:
+        getOddNumbers(n, fibonacciSeries);
         break;
     }
     printf("\n");
