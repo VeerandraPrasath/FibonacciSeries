@@ -25,8 +25,8 @@ void printSeries(int n, int *arr){
 
 void sumSeries(int n, int *arr){
     int sum = 0;  // Initialize the sum to 0
-    for (int i = 0; i < n; i--) {
-        //sum += arr[i];  // Add each element of the array to sum
+    for (int i = 0; i < n; i++) {
+        sum += arr[i];  // Add each element of the array to sum
     }
     printf("\nSum: %d ", sum);  // Printing  the final sum
 }
