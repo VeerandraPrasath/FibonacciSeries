@@ -1,24 +1,14 @@
-// Author Name: Prasath
-
-// C Program to print the fibonacci series using loops
 #include <stdio.h>
 
 void printFib(int n) {
-  
-      // If the number of terms is smaller than 1
     if (n < 1) {
         printf("Invalid Number of terms\n");
         return;
     }
-  
-      // First two terms of the series
     int prev1 = 1;
     int prev2 = 0;
 
-    // for loop that prints n terms of fibonacci series
     for (int i = 1; i <= n; i++) {
-          
-          // Print current term and update previous terms
         if (i > 2) {
             int curr = prev1 + prev2;
             prev2 = prev1;
@@ -34,8 +24,6 @@ void printFib(int n) {
 
 int main() {
     int n = 9;
-  
-      // Printing first n fibonacci terms
     printFib(n);
     return 0;
 }
