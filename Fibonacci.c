@@ -28,8 +28,8 @@ int sumSeries(int n, int *arr){
 }
 
 void getEvenNumbers(int n, int *arr){
-  int i = 0;
-  for(i = 0;i < n;i++)
+  int i = 0 ;
+  for(i = 0 ; i < n ; i++)
   {
       if((*arr) % 2 == 0)
       {
