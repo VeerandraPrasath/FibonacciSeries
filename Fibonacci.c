@@ -50,13 +50,17 @@ void findNthEle(int *arr){
       printf("%dth element is %d",n,arr[n]);
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of c8e1b22 (Added getMaxValue functionality)
 int main() {
     int n;
     printf("Enter the number of terms in the Fibonacci series: ");
     scanf("%d", &n);
     int *fibonacciSeries = generateFibonacci(n);
     int choice;
-    printf("\n\n----------------------------\nMenu\n----------------------------\n1. Print Sequence\n2. Print Sum\n3. Print Even Generated Nummbers\n4.Print the nth element\n5. Get Max value\n\nEnter Choice: ");
+    printf("\n\n----------------------------\nMenu\n----------------------------\n1. Print Sequence\n2. Print Sum\n3. Print Even Generated Nummbers\n4.Print the nth element\nEnter Choice: ");
     scanf("%d", &choice);
     switch(choice){
       case 1: 
@@ -71,9 +75,12 @@ int main() {
       case 4:
         findNthEle(fibonacciSeries);
         break;
+<<<<<<< HEAD
       // case 5:
       //   getMaxValue(n, fibonacciSeries);
       //   break;
+=======
+>>>>>>> parent of c8e1b22 (Added getMaxValue functionality)
       default:
          printf("Your choice is wrong !!");
     }
