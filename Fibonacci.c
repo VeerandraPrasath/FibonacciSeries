@@ -28,7 +28,15 @@ int sumSeries(int n, int *arr){
 }
 
 void getEvenNumbers(int n, int *arr){
-  /* Should be developed by teammate 2 */
+  int i = 0;
+  for(i = 0;i < n;i++)
+  {
+      if((*arr) % 2 == 0)
+      {
+          printf("%d ",*arr);
+      }
+      arr++;
+  }
 }
 
 
