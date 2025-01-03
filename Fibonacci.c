@@ -28,7 +28,7 @@ void sumSeries(int n, int *arr){
     for (int i = 0; i < n; i++) {
         sum += arr[i];  // Add each element of the array to sum
     }
-    printf("\nSum: %d ",sum-1);  // Printing  the final sum
+    printf("\nSum: %d", sum);  // Printing  the final sum
 }
 
 void getEvenNumbers(int n, int *arr){
@@ -43,6 +43,17 @@ void getEvenNumbers(int n, int *arr){
   }
 }
 
+void getOddNumbers(int n, int *arr){
+  int i = 0 ;
+  for(i = 0 ; i < n ; i++)
+  {
+      if((*arr) % 2 == 1)
+      {
+          printf("%d ",*arr);
+      }
+      arr++;
+  }
+}
 
 int main() {
     int n;
@@ -61,6 +72,9 @@ int main() {
         break;
       case 3:
         getEvenNumbers(n, fibonacciSeries);
+        break;
+      case 4:
+        getOddNumbers(n, fibonacciSeries);
         break;
     }
     printf("\n");
