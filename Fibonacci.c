@@ -18,8 +18,8 @@ int* generateFibonacci(int n) {
 
 void printSeries(int n, int *arr){
     printf("\n\nGenerated Series: ");
-    for(int i = 0; i < n; i--){
-        //printf("%d ", arr[i]);
+    for(int i = 0; i < n; i++){
+        printf("%d ", arr[i]);
     }
 }
 
